@@ -102,7 +102,7 @@ client.on('message', async msg => { // eslint-disable-line
                     var videos = await youtube.searchVideos(searchString, 10);
                     let index = 0;
                     var embedqueue5 = new Discord.RichEmbed()
-                        .setTitle(`__**Song Play By Blackfox**__`)
+                        .setTitle(`__**Song Play By Devil**__`)
                         .setDescription(`
 ${videos.map(video2 => `**${++index}-** ${video2.title}`).join('\n')}
 
@@ -310,21 +310,21 @@ ${serverQueue.songs.map(song => `**-** ${song.title}`).join('\n')}
         return msg.channel.sendEmbed(embedunmute3);
         }
     }
-    else if(msg.content.startsWith(`${PREFIX}helpmusic`)){
+    else if(msg.content.startsWith(`${PREFIX}help_music`)){
         var embedhelp = new Discord.RichEmbed()
-            .setTitle(`__**BlackfoxMusic Commands**__`)
-            .addField("d!play [YouTube Link/Playlist]", "Usage: `^play` Description: To play See The YouTube Linke And playlist.", false)
-            .addField("d!play [Suchbegriff(e)]", "Usage: `^play`<song name> Description: To play Music.", false)
-            .addField("d!skip", "Usage: `^skip` Description: To skip music.", false)
-            .addField("d!stop", "Usage: `^stop` Description: To Bot disconnected.", false)
-            .addField("d!song", "Usage: `^song` Description: To Check The Current playing song.", false)
-            .addField("d!queue", "Usage: `^queue` Description: To Check The Queue List.", false)
-            .addField("d!volume", "Usage: `^volume` Description: To See Volume.", false)
-            .addField("d!volume [Wert]", "Usage: `^volume` Description: To Changes the volume level to the specified value.", false)
-            .addField("d!pause", "Usage: `^pause` Description: To pause The Current Playing Song.", false)
-            .addField("d!resume", "Usage: `^resume` Description: To Resume The Paused Song.", false)
-            .addField("d!mutemusic", "Usage: `^mutemusic` Description: To mute Bot.", false)
-            .addField("d!unmutemusic", "Usage: `^unmutemusic` Description: To unmute Bot.", false)
+            .setTitle(`__**DavilMusic Commands**__`)
+            .addField("d?play [YouTube Link/Playlist]", "Usage: `d?play` Description: To play See The YouTube Linke And playlist.", false)
+            .addField("d?play [Suchbegriff(e)]", "Usage: `d?play`<song name> Description: To play Music.", false)
+            .addField("d?skip", "Usage: `d?skip` Description: To skip music.", false)
+            .addField("d?stop", "Usage: `d?stop` Description: To Bot disconnected.", false)
+            .addField("d?song", "Usage: `d?song` Description: To Check The Current playing song.", false)
+            .addField("d?queue", "Usage: `d?queue` Description: To Check The Queue List.", false)
+            .addField("d?volume", "Usage: `d?volume` Description: To See Volume.", false)
+            .addField("d?volume [Wert]", "Usage: `d?volume` Description: To Changes the volume level to the specified value.", false)
+            .addField("d?pause", "Usage: `d?pause` Description: To pause The Current Playing Song.", false)
+            .addField("d?resume", "Usage: `d?resume` Description: To Resume The Paused Song.", false)
+            .addField("d?mutemusic", "Usage: `d?mutemusic` Description: To mute Bot.", false)
+            .addField("d?unmutemusic", "Usage: `d?unmutemusic` Description: To unmute Bot.", false)
             .setColor([226, 50, 41])
             .setThumbnail(client.user.avatarURL)
             return msg.channel.sendEmbed(embedhelp);
@@ -421,16 +421,16 @@ client.on('message', async msg => { // eslint-disable-line
     if(msg.content.startsWith(`${PREFIX}helpmusic`)){
         var embedhelp = new Discord.RichEmbed()
             .setTitle(`devilmusic Commands`)
-            .addField("d?play [YouTube Link/Playlist]", "Usage: `mv!play` Description: To play See The YouTube Linke And playlist.", false)
-            .addField("d?play [Suchbegriff(e)]", "Usage: `mv!play`<song name> Description: To play Music.", false)
-            .addField("d?skip", "Usage: `mv!skip` Description: To skip music.", false)
-            .addField("d?stop", "Usage: `mv!stop` Description: To Bot disconnected.", false)
-            .addField("d?np", "Usage: `mv!np` Description: To Check The Current playing song.", false)
-            .addField("d?queue", "Usage: `mv!queue` Description: To Check The Queue List.", false)
-            .addField("d?volume", "Usage: `mv!volume` Description: To See Volume.", false)
-            .addField("d?volume [Wert]", "Usage: `mv!volume` Description: To Changes the volume level to the specified value.", false)
-            .addField("d?pause", "Usage: `mv!pause` Description: To pause The Current Playing Song.", false)
-            .addField("d?resume", "Usage: `mv!resume` Description: To Resume The Paused Song.", false)
+            .addField("d?play [YouTube Link/Playlist]", "Usage: `d?play` Description: To play See The YouTube Linke And playlist.", false)
+            .addField("d?play [Suchbegriff(e)]", "Usage: `d?play`<song name> Description: To play Music.", false)
+            .addField("d?skip", "Usage: `d?skip` Description: To skip music.", false)
+            .addField("d?stop", "Usage: `d?stop` Description: To Bot disconnected.", false)
+            .addField("d?np", "Usage: `d?np` Description: To Check The Current playing song.", false)
+            .addField("d?queue", "Usage: `d?queue` Description: To Check The Queue List.", false)
+            .addField("d?volume", "Usage: `d?volume` Description: To See Volume.", false)
+            .addField("d?volume [Wert]", "Usage: `d?volume` Description: To Changes the volume level to the specified value.", false)
+            .addField("d?pause", "Usage: `d?pause` Description: To pause The Current Playing Song.", false)
+            .addField("d?resume", "Usage: `d?resume` Description: To Resume The Paused Song.", false)
             .setColor([226, 50, 41])
             .setThumbnail(client.user.avatarURL)
             return msg.channel.sendEmbed(embedhelp);
