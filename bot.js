@@ -438,4 +438,4 @@ client.on('message', async msg => { // eslint-disable-line
     return undefined;
 });
 
-client.login("NTQ3ODQ0NjU0NDUyNzAzMzIx.D1p84g.N6TI4uErS81fdy8lA8hVK-qUdoA");
+client.login(process.env.BOT_TOKEN);
